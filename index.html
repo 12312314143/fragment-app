@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Web App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .container {
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .box {
+      background: #1f1f1f;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #007aff;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://via.placeholder.com/40" alt="Logo">
+      <h1>Fragment</h1>
+    </div>
+    <div class="box">
+      <p><strong>What is this?</strong></p>
+      <p>Someone offered <strong>950 💎</strong> for your username. If the price suits you, press "Accept the offer".</p>
+    </div>
+    <div class="box">
+      <p><strong>Telegram Username:</strong> @YourUsername</p>
+      <p><strong>Web Address:</strong> <a href="https://your-site.com" target="_blank">your-site.com</a></p>
+      <p><strong>TON Web 3.0 Address:</strong> EQDBn...nTB-oINBf</p>
+    </div>
+    <a href="#" class="button">Accept the offer</a>
+    <div class="box">
+      <p><strong>Latest Offers</strong></p>
+      <p>💎 950 - EQDBn...nTB-oINBf</p>
+    </div>
+  </div>
+  <script>
+    // Initialize Telegram Web App
+    const telegram = window.Telegram.WebApp;
+    telegram.expand(); // Expands the Web App to fullscreen
+  </script>
+</body>
+</html>
